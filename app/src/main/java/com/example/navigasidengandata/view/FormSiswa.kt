@@ -77,6 +77,15 @@ fun FormSiswa(
                 thickness = dimensionResource(R.dimen.thickness_divider),
                 color = Color.Blue
             )
+            Row {
+                pilihanJK.forEach { item ->
+                    Row(modifier = Modifier.selectable
+
+                }
+            }
+
+
+
         }
     }
 }

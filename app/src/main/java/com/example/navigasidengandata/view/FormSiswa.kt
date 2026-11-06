@@ -79,8 +79,15 @@ fun FormSiswa(
             )
             Row {
                 pilihanJK.forEach { item ->
-                    Row(modifier = Modifier.selectable
+                    Row(modifier = Modifier.selectable(
+                        selected = txtGender == item,
+                        onClick = {
+                            txtGender = item
+                        }
+                    ),
+                        verticalAlignment = Alignment.CenterVertically) {
 
+                    }
                 }
             }
 
